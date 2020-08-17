@@ -1,10 +1,12 @@
 GO言語版
+
 Standard Go Project Layoutに沿ったディレクトリ構成を自動作成するシェル
 
 すでに同じ名前のディレクトリが存在する場合は作成されない
 
 Standard Go Project Layoutをそのまま適用すると多すぎるので、現在個人的に利用するディレクトリだけ作成。
 
+ディレクトリとファイルはGOPATH/src内に展開
 
 ```
 {project_name}
