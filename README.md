@@ -15,6 +15,8 @@ Standard Go Project Layoutをそのまま適用すると多すぎるので、現
   │
   ├── web                 //テンプレート、HTML、CSSとかをおく
   │
+  ├── pkg                 //ライブラリ
+  │
   └── assets              //画像などのアセット置き場
 
 ```

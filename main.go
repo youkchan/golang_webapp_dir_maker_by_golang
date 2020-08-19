@@ -16,7 +16,7 @@ func main() {
     if !Exists(filepath.Join(gopath, "src", project_name)) {
         CreateDir()
         WriteMain()
-        fmt.Println(project_name + " project created!")
+        fmt.Println(gopath + "/" + project_name + " project created!")
     } else {
         fmt.Println("The project " +  project_name + " already exists")
     }
@@ -42,6 +42,12 @@ func CreateDir() {
     if err != nil {
         log.Fatal(err)
     }
+
+    err = os.MkdirAll(filepath.Join(gopath, "src", project_name, "pkg"), 0755)
+    if err != nil {
+        log.Fatal(err)
+    }
+
 }
 
 func WriteMain() {
